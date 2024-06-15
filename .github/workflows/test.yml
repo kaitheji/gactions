@@ -34,3 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: checking for ping
+        run: |
+          ansible hosts -m ping
+          
